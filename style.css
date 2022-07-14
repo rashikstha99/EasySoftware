@@ -1,0 +1,182 @@
+@font-face {
+    font-family: proxima;
+    src: url(font/Proxima\ Nova\ Font.otf);
+}
+
+body{
+    font-family: proxima;
+    background-color: #EDf5FF !important;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --blue: #101b9a;
+    --background: #d1e5ff;
+    --red: #E91A33;
+  }
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+    font-weight: 600;
+}
+
+i{
+    color: var(--red);
+}
+
+
+
+/* ---------------------HEADER--------------------- */
+.upper{
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+    padding-top: 1rem;
+} 
+
+.upper .d-flex i{
+    line-height: 1.5;
+    color: var(--red);
+}
+
+.upper .d-flex p{
+    padding-left: 8px;
+}
+
+.lower nav{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.lower .navbar a{
+    color: #000;
+}
+
+.lower .navbar .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.lower .navbar .nav-item{
+    padding: 0 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.lower .navbar .nav-item:hover{
+    color: var(--red);
+    border-bottom: 1px solid ;
+    background-color: var(--background);
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+header .contacts{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header .contacts .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    content: "";
+}
+
+header .contacts .breadcrumb-item .black-text img{
+    color: var(--red);
+}
+
+header .contacts .breadcrumb-item .black-text span{
+    color: var(--red);
+}
+
+header .contacts .d-flex .first .breadcrumb{
+    background-color: transparent;
+}
+
+.wave img{
+    width: 100% ;
+}
+
+
+
+
+
+
+
+/* ---------------------MID-BODY--------------------- */
+.mid-body .wave img{
+    transform: rotate(180deg);
+}
+
+
+
+
+/* ---------------------FOOTER---------------------- */
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .container-fluid{
+    border-bottom: 3px solid #101c9abd;
+}
+
+footer .container-fluid .row{
+    padding-bottom: 1rem;
+}
+
+footer .container-fluid .row .about h3{
+    padding-bottom: 2rem;
+}
+
+footer .container-fluid .row .about p{
+    color: #555555;
+    line-height: 170%;
+    letter-spacing: 0.09em;
+}
+
+footer .container-fluid .row .quick ul li{
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+}
+
+footer .container-fluid .row .contact ul li{
+    font-size: 1.25rem;
+    padding: 1rem 0;
+}
+
+footer .container-fluid .row .contact ul li i{
+    font-size: 2rem;
+}
+
+footer .footer-copyright .socials i{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+footer .footer-copyright{
+    align-items: center;
+}
+
+footer .footer-copyright .copyrght p{
+    font-size: 1rem;
+}
