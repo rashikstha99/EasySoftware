@@ -5,7 +5,7 @@
 
 body{
     font-family: proxima;
-    background-color: #EDf5FF !important;
+    /* background-color: #EDf5FF !important; */
 }
 
 h1,h2,h3,h4,h5{
@@ -124,6 +124,65 @@ header .contacts .d-flex .first .breadcrumb{
 /* ---------------------MID-BODY--------------------- */
 .mid-body .wave img{
     transform: rotate(180deg);
+}
+
+.mid-body .business{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mid-body .business .owl-carousel .even{
+    background-color: #d1e5ff;
+}
+
+.mid-body .business .owl-carousel .card{
+    border: none;
+    width: 100%;
+}
+
+.mid-body .business .owl-carousel .even .card{
+    background-color: #d1e5ff;
+    width: 100%;
+}
+
+.mid-body .business .owl-carousel .card img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mid-body .business .owl-carousel .card .bp-1{
+    width: 245px;
+    height: 245px;
+}
+
+.mid-body .business .owl-carousel .even .card .bp-2{
+    width: 300px;
+    height: 111px;
+    margin-top: 67px;
+    margin-bottom:67px;
+}
+
+.mid-body .business .owl-carousel .card .bp-3{
+    width: 148px;
+    height: 148px;
+    margin-top: 48.5px;
+    margin-bottom:48.5px;
+}
+
+.mid-body .business .owl-carousel .card .bp-4{
+    width: 137px;
+    height: 137px;
+    margin-top: 54px;
+    margin-bottom:54px;
+}
+
+.mid-body .business .owl-carousel .card .card-body i{
+    font-size: 1.5rem;
+}
+
+.mid-body .business .owl-carousel .card .card-body p{
+    font-size: 1rem;
+    margin: .5rem 0;
 }
 
 
