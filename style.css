@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5{
 
 :root {
     --blue: #101b9a;
-    --background: #d1e5ff;
+    --background: #EDF5FF;
     --red: #E91A33;
   }
 
@@ -31,13 +31,38 @@ h3{
     font-weight: 600;
 }
 
+h4{
+    margin: 0;
+    font-weight: 800;
+}
+
 i{
     color: var(--red);
+}
+
+.row{
+    margin: 0;
+}
+
+.col-md-4{
+    padding: 0;
+}
+
+.col-md-5{
+    padding: 0;
+}
+
+.col-md-12{
+    padding: 0;
 }
 
 
 
 /* ---------------------HEADER--------------------- */
+header{
+    background: linear-gradient( transparent, #d1e5ffab);
+}
+
 .upper{
     justify-content: space-between;
     width: 80%;
@@ -72,14 +97,13 @@ i{
 .lower .navbar .nav-item{
     padding: 0 1.5rem;
     font-size: 1.25rem;
-    border-radius: 0.5rem;
 }
 
-.lower .navbar .nav-item:hover{
-    color: var(--red);
-    border-bottom: 1px solid ;
-    background-color: var(--background);
-    transition: all 0.5s ease-in-out;
+.lower .navbar .nav-item:hover a{
+    color: var(--blue);
+    border-bottom: 1px solid var(--red) ;
+    transition: all 0.3s ease-in-out;
+    transform: scale3d(1.1,1.1,1);
 }
 
 .dropdown-toggle::after {
@@ -109,6 +133,7 @@ header .contacts .breadcrumb-item .black-text span{
 
 header .contacts .d-flex .first .breadcrumb{
     background-color: transparent;
+    font-size: 1.3rem;
 }
 
 .wave img{
@@ -122,13 +147,113 @@ header .contacts .d-flex .first .breadcrumb{
 
 
 /* ---------------------MID-BODY--------------------- */
-.mid-body .wave img{
-    transform: rotate(180deg);
+.mid-body p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #555555;
+    padding-bottom: 1rem;
+}
+
+.mid-body .upper .image{
+    background-color: var(--background);
+}
+
+.mid-body .upper{
+    border: 0;
+    box-shadow: 5px 8px 8px #888888;
+    padding-bottom: 3rem;
+
+}
+
+.mid-body .upper .form h1{
+    padding-bottom: 2rem;
+}
+
+.form{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 3rem;
+
+  }
+
+.form-control{
+    border: 2px solid #000;
+    margin: 0;
+    line-height: 2.5;
+}
+  
+input {
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    line-height: 6ex;
+}
+
+label{
+position: absolute;
+top: -1ex;
+z-index: 1;
+left: 2em;
+background-color: white;
+padding: 0 5px;
+font-weight: bold;
+font-size: 1.3rem;
+}
+
+.mid-body .upper .form form .btn{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.5rem 4rem;
+    background-color: #d1e5ff;
+}
+
+.mid-body .upper .form form .btn p{
+    background: linear-gradient(45deg,#101b9a,#E91A33);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.mid-body .upper .form form .btn:hover{
+    transform: scale3d(1.2, 1.2, 1);
+    background-color: #888888;
+}
+
+
+.mid-body .upper .image{
+    text-align: center;
+    position: relative;
+}
+
+.mid-body .upper .image .logo .phone{
+    padding: 1rem;
+}
+
+.mid-body .upper .image .logo .location{
+    padding: 1rem;
+}
+
+.mid-body .upper .image img{
+    position: absolute;
+    bottom: -35px;
+    right: 0px;
+    width: 100%;
 }
 
 .mid-body .business{
     width: 80%;
     margin: 0 auto;
+    padding: 4rem 0;
 }
 
 .mid-body .business .owl-carousel .even{
@@ -140,7 +265,7 @@ header .contacts .d-flex .first .breadcrumb{
     width: 100%;
 }
 
-.mid-body .business .owl-carousel .even .card{
+.mid-body .business .owl-carousel .odd .card{
     background-color: #d1e5ff;
     width: 100%;
 }
@@ -176,6 +301,10 @@ header .contacts .d-flex .first .breadcrumb{
     margin-bottom:54px;
 }
 
+.mid-body .business .owl-carousel .card .card-body{
+    padding: 0.8rem;
+}
+
 .mid-body .business .owl-carousel .card .card-body i{
     font-size: 1.5rem;
 }
@@ -183,16 +312,36 @@ header .contacts .d-flex .first .breadcrumb{
 .mid-body .business .owl-carousel .card .card-body p{
     font-size: 1rem;
     margin: .5rem 0;
+    padding: 0;
 }
 
 
 
 
-/* ---------------------FOOTER---------------------- */
 
+
+
+
+
+
+/* ---------------------FOOTER---------------------- */
 footer{
+    background-color: var(--background);
+    position: relative;
+}
+
+footer .wave img{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.footer{
     width: 80%;
     margin: 0 auto;
+    padding-top: 12rem;
 }
 
 footer .container-fluid{

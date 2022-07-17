@@ -6,6 +6,8 @@
     loop:true,
     margin:10,
     nav:false,
+    autoplay:false,
+    autoplayTimeout:1500,
     responsive:{
         0:{
             items:1
